@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+aside .active{
+    color: #FCD34D;
+}
+ .active {
+    color:#3E8E7E	;
+}
