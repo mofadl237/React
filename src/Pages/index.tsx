@@ -4,6 +4,7 @@ import HomeHero from "../Components/Home/HeroSection";
 import HomeSecondSection from "../Components/Home/SecondSection";
 import HomeThirdSection from "../Components/Home/ThirdSection";
 import HomeSixSection from "../Components/Home/SixSection";
+import HomeSevenSection from "../Components/Home/SevenSection";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <HomeFourSection/>
       <HomeFiveSection/>
       <HomeSixSection/>
+      <HomeSevenSection/>
     </>
   );
 };
