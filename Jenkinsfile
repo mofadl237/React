@@ -7,6 +7,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = 'react-docs'
+        IMAGE_TAG = "${BUILD_NUMBER}"
     }
 
     stages {
@@ -32,8 +33,8 @@ pipeline {
 
                         sh '''
                         echo $PASSWORD | docker login -u $USERNAME --password-stdin
-                        docker tag ${IMAGE_NAME} $USERNAME/${IMAGE_NAME}
-                        docker push $USERNAME/${IMAGE_NAME}
+                        docker tag ${IMAGE_NAME} $USERNAME/${IMAGE_NAME}:${IMAGE_TAG}
+                        docker push $USERNAME/${IMAGE_NAME}:${IMAGE_TAG}
                         '''
                     }
                 }
@@ -43,8 +44,8 @@ pipeline {
         stage('Deployment') {
             steps {
                 script {
-                    sh 'kubectl apply -f ./K8s/service.yaml'
-                    sh 'kubectl apply -f ./K8s/deployment.yaml'
+                    sh 'sudo -u mfadl237 kubectl apply -f ./K8s/service.yaml'
+                    sh 'sudo -u mfadl237 kubectl apply -f ./K8s/deployment.yaml'
                 }
             }
         }

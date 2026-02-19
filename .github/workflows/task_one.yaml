@@ -1,0 +1,13 @@
+name: firstGHAction
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  first-job: 
+    name: firstTask
+    runs-on: ubuntu-latest
+    steps:
+      - name: run bash command
+        run: echo "Hello Github Action"
+        shell: bash
