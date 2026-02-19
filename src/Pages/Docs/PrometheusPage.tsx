@@ -59,7 +59,7 @@ Scrape Interval: 15s`}
         </h2>
 
         <img
-          src="/images/prometheus-targets.png"
+          src="/Images/Graphana 3.png"
           alt="Prometheus Targets"
           className="rounded-2xl border border-gray-800 shadow-xl mb-6"
         />

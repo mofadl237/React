@@ -72,7 +72,7 @@ export default function HomeThirdSection() {
             <div className="absolute w-[500px] h-[500px] bg-[#E50914] opacity-10 blur-3xl rounded-full" />
 
             <img
-              src="/Images/SystemArchitecture.png"
+              src="/Images/Keycloak login page.png"
               alt="Cloud Architecture Diagram"
               className="relative rounded-2xl shadow-2xl border border-gray-800"
             />

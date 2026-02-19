@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-docs-deployment
+  labels:
+    app: react-docs
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: react-docs
+
+  template:
+    metadata:
+      labels:
+        app: react-docs
+
+    spec:
+      containers:
+        - name: react-docs-container
+          image: mfadl237/react-docs:latest
+
+          ports:
+            - containerPort: 3000
+
+          imagePullPolicy: Always

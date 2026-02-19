@@ -20,7 +20,7 @@ export default function GrafanaPage() {
         </h2>
 
         <img
-          src="/images/grafana-dashboard.png"
+          src="/Images/Graphana 1.png"
           alt="Grafana Dashboard"
           className="rounded-2xl border border-gray-800 shadow-xl mb-6"
         />
@@ -38,7 +38,7 @@ export default function GrafanaPage() {
         </h2>
 
         <img
-          src="/images/grafana-datasource.png"
+          src="/Images/Graphana 2.png"
           alt="Grafana Data Source"
           className="rounded-2xl border border-gray-800 shadow-xl mb-6"
         />

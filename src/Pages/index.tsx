@@ -2,7 +2,6 @@ import HomeFourSection from "../Components/Home/FourSection";
 import HomeFiveSection from "../Components/Home/FiveSection";
 import HomeHero from "../Components/Home/HeroSection";
 import HomeSecondSection from "../Components/Home/SecondSection";
-import HomeThirdSection from "../Components/Home/ThirdSection";
 import HomeSixSection from "../Components/Home/SixSection";
 import HomeSevenSection from "../Components/Home/SevenSection";
 
@@ -11,7 +10,7 @@ const HomePage = () => {
     <>
       <HomeHero/>
       <HomeSecondSection/>
-      <HomeThirdSection />
+      {/* <HomeThirdSection /> */}
       <HomeFourSection/>
       <HomeFiveSection/>
       <HomeSixSection/>
