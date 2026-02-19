@@ -12,7 +12,7 @@ jobs:
         run: ls
         shell: bash
       - name: run Checkout like git clone <my-repo>
-        uses: action/checkout@v3
+        uses: actions/checkout@v3
       - name: run bash After command
         run: ls
         shell: bash
